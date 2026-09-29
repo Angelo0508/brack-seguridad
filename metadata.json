@@ -1,0 +1,6 @@
+{
+  "name": "BRACK Seguridad Inteligente",
+  "description": "Seguridad activa con Guardia Virtual 24/7, monitoreo en tiempo real desde el Centro Integral de Vigilancia (CIV), disuasión por perifoneo y control de accesos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

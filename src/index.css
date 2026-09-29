@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Space Grotesk', -apple-system, sans-serif;
+    --font-sans: 'Outfit', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #f4f4f5;
+    background-color: #09090b;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(234, 88, 12, 0.2), inset 0 0 15px rgba(234, 88, 12, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(234, 88, 12, 0.45), inset 0 0 20px rgba(234, 88, 12, 0.2);
+  }
+}
+
+@keyframes radarSweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes waveBar {
+  0%, 100% { height: 6px; }
+  50% { height: 26px; }
+}
+
+.glow-orange {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.radar-sweep {
+  animation: radarSweep 3.5s linear infinite;
+}
+
+.soundwave-bar {
+  animation: waveBar 0.8s ease-in-out infinite alternate;
+}
