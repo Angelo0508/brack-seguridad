@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Phone, MapPin, Instagram, ArrowUp } from 'lucide-react';
+import { Shield, Phone, MapPin, Instagram, ArrowUp, Mail } from 'lucide-react';
 import { BRACK_DATA } from '../data/brackData';
 
 interface FooterProps {}
@@ -64,6 +64,15 @@ export const Footer: React.FC<FooterProps> = () => {
                 className="text-orange-400 hover:underline font-mono"
               >
                 {BRACK_DATA.phone}
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <Mail className="w-3.5 h-3.5 text-orange-400 shrink-0" />
+              <a
+                href="mailto:ventas@brackseguridad.com"
+                className="hover:text-white truncate"
+              >
+                ventas@brackseguridad.com
               </a>
             </div>
             <div className="flex items-center gap-2">
